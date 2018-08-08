@@ -3,6 +3,7 @@ import numpy as np
 import json
 import random
 import time
+import sys
 
 # Funcion to simulate the experiment
 
@@ -105,7 +106,7 @@ Id = 1
 #                  2 denotes the Delay N(1000,100) Case
 #                  3 denotes the Delay N(1000,300) Case
 
-ExpType = 1
+ExpType = sys.argv[1]
 
 # Trail Case:
 Input = np.random.permutation([1,2])
